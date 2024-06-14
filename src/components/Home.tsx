@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Navbar from './Navbar';
 import Item from './Item';
 import '../styles/Home.css';
@@ -18,7 +17,7 @@ const Home = () => {
             <div className="items-grid-container">
             {itemList.map((element: WatchItem) => {
                 return (
-                    <Item id={element.id} image={element.image} description={element.description} key={element.id}/>
+                    <Item  image={element.image} description={element.description} key={element.id}/>
                 )
             })
             }

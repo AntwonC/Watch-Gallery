@@ -1,14 +1,12 @@
-import { useState } from 'react';
 import '../styles/Item.css';
 
 interface Props {
-    id: number,
     image: string,
     description: string,
     key: number,
 }
 
-const Item = ({ id, image, description } : Props) => {
+const Item = ({ image, description } : Props) => {
     return (
         <div className="item-shadow">
             <div className="item">
