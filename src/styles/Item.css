@@ -1,19 +1,54 @@
-.item {
-    display: flex;
-    width: 200px;
+.item-shadow {
+    border: none;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+    max-width: 75%;
+    margin-top: 2em;
     
-    background-image: linear-gradient(to bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 1em;
+}
+
+.item {
+    --padding: 1rem;
+    background: #fceabb;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f8b500, #fceabb);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f8b500, #fceabb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    overflow: hidden;
+    border: 1px solid #777;
+    border-radius: .23rem;
+    
+}
+
+
+
+.item:hover > .item-header.item-image > img {
+    transform: scale(1.025)
 }
 
 .item img {
-    width: 50%;
+    width: 100%;
     height: auto;
 }
 
+.item-header {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    padding: var(--padding);
+    padding-bottom: 0;
+}
+
+.item-header.item-image {
+    overflow: hidden;
+}
+
+.item-header.item-image > img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    max-height: 100%;
+    object-position: center;
+    transition: 200ms transform ease-in-out;
+}
+
 .item-text {
-    
+    font-size: .9rem;
+    padding: 0 var(--padding);
 }

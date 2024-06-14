@@ -15,7 +15,7 @@ interface WatchItem {
 const Home = () => {
     const getWatchData = (itemList: WatchItem[]) => {
         return (
-            <div className="items-container">
+            <div className="items-grid-container">
             {itemList.map((element: WatchItem) => {
                 return (
                     <Item id={element.id} image={element.image} description={element.description} key={element.id}/>
@@ -36,3 +36,9 @@ const Home = () => {
 }
 
 export default Home;
+
+/* 
+background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+
+*/
