@@ -1,0 +1,42 @@
+body {
+    margin: 0 auto;
+}
+img {
+    width: 2em;
+    height: 2em;
+}
+
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color: grey;
+    
+}
+
+.navbar-elements {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 20px;
+}
+
+
+@font-face {
+    font-family: 'Marlboro';
+    src: url("../fonts/Marlboro.ttf");
+}
+
+@font-face {
+    font-family: 'NotoSansRegular';
+    src: url("../fonts/NotoSans-Regular.ttf");
+}
+
+
+
+.navbar-text {
+    font-family: 'NotoSansRegular';
+    font-size: 1.5em;
+    
+}
