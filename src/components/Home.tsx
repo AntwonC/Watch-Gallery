@@ -15,14 +15,14 @@ interface WatchItem {
 const Home = () => {
     const getWatchData = (itemList: WatchItem[]) => {
         return (
-            <>
+            <div className="items-container">
             {itemList.map((element: WatchItem) => {
                 return (
                     <Item id={element.id} image={element.image} description={element.description} key={element.id}/>
                 )
             })
             }
-            </>
+            </div>
         )
     }
 

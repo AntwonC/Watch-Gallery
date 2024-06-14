@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import '../styles/Item.css';
 
 interface Props {
     id: number,
@@ -9,10 +10,10 @@ interface Props {
 
 const Item = ({ id, image, description } : Props) => {
     return (
-        <>
-            <img src={image}></img>
-            <p>{description}</p>
-        </>
+        <div className="item">
+            <img className="item-image"src={image}></img>
+            <p className="item-text">{description}</p>
+        </div>
     )
 };
 
