@@ -1,5 +1,5 @@
 import Navbar from './Navbar';
-import Item from './Item';
+import Item from '../components/Item';
 import '../styles/Home.css';
 
 import itemList from '../mocks/itemList.json';
