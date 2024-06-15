@@ -6,7 +6,7 @@ import './index.css'
 
 const router = createHashRouter([
   {
-    path: "/Watch-Gallery",
+    path: "/",
     element: <Home />
   }
 ]);
