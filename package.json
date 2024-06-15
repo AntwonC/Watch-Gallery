@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://AntwonC.github.io/Watch-Gallery/index.html",
+  "homepage": "https://antwonc.github.io/Watch-Gallery/index.html",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
